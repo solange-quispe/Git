@@ -1,0 +1,32 @@
+#padre {
+	width: 80%; 
+	height: 600px;
+	background-color: lightgreen;
+	display: flex; /*LO HACE FLEXIBLE,SE VA AJUSTANDO SOLO DEPENDIENDO DE LA INFORMACION QUE YO LE DOY*/
+	flex-direction: row; /*LOS HIJOS VAN A ESTAR EN FILA*/
+	/*flex-direction: column;*/ /*LOS HIJOS VAN A ESTAR EN COLUMNA*/
+	/*flex-direction: column-reverse; *//*PRODUCE UN EFECTO ESPEJO, ES DECIR LOS POSICIONA AL REVEZ*/
+	justify-content: center; /*JUSTIFICA LO QUE AGREGUE EN EL FLEX-DIRECTION*/
+	
+	/*flex-direction: row-reverse;*/ /*ME HACE UNA FILA EN REVERSA*/
+	/*justify-content: flex-start;*/ /*SE ME PONER AL PRINCIPIO DE LA FILA*/
+	/*justify-content: flex-end;*/ /*SE ME PONE AL FINAL DE LA FILA*/
+	/*justify-content: space-between;*/ /*ME AGREGA ESPACIO ENTRE ELLOS*/
+	/*justify-content: space-around;*//* ME HACE ESPACIOS A LOS LADOS TAMBIEN, NO SOLO EN EL MEDIO DE CADA CAJA*/
+	flex-wrap: wrap; /*LE OBLIGO A QUE TOME EL TAMAÑO Y LO QUE SOBRA LO MANDA PARA DONDE QUIERE*/
+	align-items: flex-start; /*HACE LO CONTRARIO DE LO QUE TIENE MI FLEX-DIRECTION*/
+	align-items: flex-end; /*SE COLOCA AL FINAL PORQUE SIEMPRE ES TODO LO CONTRARIO A LO QUE ESTOY TRABAJANDO*/
+	align-items: center; /*ME LO CENTRA AL MEDIO*/
+}
+div { /*HIJOS*/
+	background-color: tomato;
+	width: 20%;
+	height: 100px;
+	margin: 10px;
+}
+#rebelde {
+	margin-left: auto;
+	/*align-self: flex-end; SE VA HACIA ABAJO*/
+	/*margin-right: auto;*/
+	align-self: flex-start; /*SE VA HACIA ARRIBA*/
+}
